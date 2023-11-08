@@ -11,9 +11,9 @@ spec:
     - namespace: prod
       server: 'https://kubernetes.default.svc'
     - namespace: qa
-      server: 'https://10.5.0.110:6443'
+      server: 'https://kubernetes.default.svc'
     - namespace: staging
-      server: 'https://10.5.0.110:6443'
+      server: 'https://kubernetes.default.svc'
   clusterResourceWhitelist:
     - group: '*'
       kind: '*'

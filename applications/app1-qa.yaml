@@ -10,7 +10,7 @@ spec:
     targetRevision: HEAD
     path: ./app-manifest-demo/envs/qa
   destination:
-    server: 'https://10.5.0.110:6443'
+    server: 'https://kubernetes.default.svc'
     namespace: qa
   syncPolicy:
     automated:
