@@ -8,10 +8,10 @@ spec:
   source:
     repoURL: 'https://github.com/ssijbabu/app1.git'
     targetRevision: HEAD
-    path: app-manifest-demo/envs/staging
+    path: ./app-manifest-demo/envs/staging
   destination:
     server: 'https://10.5.0.110:6443'
-    namespace: app1-staging
+    namespace: staging
   syncPolicy:
     automated:
       prune: true

@@ -8,10 +8,10 @@ spec:
   source:
     repoURL: 'https://github.com/ssijbabu/app1.git'
     targetRevision: HEAD
-    path: app-manifest-demo/envs/prod
+    path: ./app-manifest-demo/envs/prod
   destination:
     server: 'https://kubernetes.default.svc'
-    namespace: app1
+    namespace: prod
   syncPolicy:
     automated:
       prune: true

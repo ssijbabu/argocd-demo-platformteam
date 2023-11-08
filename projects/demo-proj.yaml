@@ -8,11 +8,11 @@ spec:
   sourceRepos:
     - 'https://github.com/ssijbabu/app1.git'
   destinations:
-    - namespace: app1
+    - namespace: prod
       server: 'https://kubernetes.default.svc'
-    - namespace: app1-qa
+    - namespace: qa
       server: 'https://10.5.0.110:6443'
-    - namespace: app1-staging
+    - namespace: staging
       server: 'https://10.5.0.110:6443'
   clusterResourceWhitelist:
     - group: '*'
