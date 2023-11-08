@@ -6,10 +6,14 @@ metadata:
 spec:
   description: My Argo CD project
   sourceRepos:
-    - 'https://my-git-repository.git'
+    - 'https://github.com/ssijbabu/app1.git'
   destinations:
-    - namespace: my-namespace
+    - namespace: app1
       server: 'https://kubernetes.default.svc'
+    - namespace: app1-qa
+      server: 'https://10.5.0.64:6443'
+    - namespace: app1-staging
+      server: 'https://10.5.0.64:6443'
   clusterResourceWhitelist:
     - group: '*'
       kind: '*'
