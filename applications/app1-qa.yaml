@@ -10,9 +10,11 @@ spec:
     targetRevision: HEAD
     path: app-manifest-demo/envs/qa
   destination:
-    server: 'https://10.5.0.64:6443'
+    server: 'https://10.5.0.110:6443'
     namespace: app1-qa
   syncPolicy:
     automated:
       prune: true
       selfHeal: true
+    syncOptions:
+    - CreateNamespace=true
