@@ -1,14 +1,17 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: staging
+  name: guestbook
   namespace: argocd
 spec:
   project: project1
   source:
-    repoURL: 'https://github.com/ssijbabu/app1.git'
+    repoURL: 'https://github.com/argoproj/argocd-example-apps.git'
     targetRevision: HEAD
-    path: ./app-manifest-demo/envs/staging
+    path: ./helm-guestbook
+    helm:
+      valueFiles:
+        - values.yaml
   destination:
     server: 'https://kubernetes.default.svc'
     namespace: staging
