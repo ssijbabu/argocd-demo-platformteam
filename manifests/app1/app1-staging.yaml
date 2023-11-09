@@ -7,7 +7,7 @@ spec:
   project: app1-proj
   source:
     repoURL: 'https://github.com/ssijbabu/app1.git'
-    targetRevision: HEAD
+    targetRevision: staging
     path: ./app-manifest-demo/envs/staging
   destination:
     server: 'https://kubernetes.default.svc'
