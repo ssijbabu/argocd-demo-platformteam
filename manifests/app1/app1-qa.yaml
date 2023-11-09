@@ -4,7 +4,7 @@ metadata:
   name: qa
   namespace: argocd
 spec:
-  project: project1
+  project: app1-proj
   source:
     repoURL: 'https://github.com/ssijbabu/app1.git'
     targetRevision: HEAD

@@ -1,17 +1,17 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: prod
+  name: staging
   namespace: argocd
 spec:
-  project: project1
+  project: app1-proj
   source:
     repoURL: 'https://github.com/ssijbabu/app1.git'
     targetRevision: HEAD
-    path: ./app-manifest-demo/envs/prod
+    path: ./app-manifest-demo/envs/staging
   destination:
     server: 'https://kubernetes.default.svc'
-    namespace: prod
+    namespace: staging
   syncPolicy:
     automated:
       prune: true
