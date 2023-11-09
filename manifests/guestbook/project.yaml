@@ -1,12 +1,11 @@
 apiVersion: argoproj.io/v1alpha1
 kind: AppProject
 metadata:
-  name: project1
+  name: guestbook-proj
   namespace: argocd
 spec:
-  description: My Argo CD project
+  description: Project for guestbook app
   sourceRepos:
-    - 'https://github.com/ssijbabu/app1.git'
     - 'https://github.com/argoproj/argocd-example-apps.git'
   destinations:
     - namespace: prod
